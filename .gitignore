@@ -59,15 +59,8 @@
 *.synctex.gz
 *.orig
 
-*.pdf
-
-!/**/Material/*.pdf
-!/**/Material/**/*.pdf
-!/**/Slides/*.pdf
-!/**/Noter/*.pdf
-!/**/Notes/*.pdf
-!/**/Documentation/*.pdf
-!**/Bilag/*.pdf #An exception
+/Document/*.pdf
+/Document/**/*.pdf
 
 ####### Temporary folders ####### 
 [Bb]in
