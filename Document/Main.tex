@@ -1,0 +1,51 @@
+\documentclass[oneside, 12pt]{memoir}
+
+\input{../Preamble}
+
+%FixMe pakken viser små kommentarer, hvor der skal rettes
+%--------------------------------------------------
+%Brug med følgende: \fxnote{det her skal uddybes!} 
+%Se liste over alle fixMe's: \listoffixmes
+%Erstat 'draft' med 'final' for at fjerne alle kommentarer
+%--------------------------------------------------
+\usepackage[footnote,final,danish,draft,nomargin]{fixme}
+
+
+\title{Terma Case}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+%\begin{titlingpage}
+%	\include{Forside}
+%\end{titlingpage}
+
+
+\section*{Versionshistorie}
+%\begin{tabular}{p{0.05\textwidth}|p{0.1\textwidth}|p{0.05\textwidth}|p{0.7\textwidth}}
+%\hline 1.0 & 11/13 - 13 & RAB & Tilføjet en masse afsnit. Der mangler dog stadig \textit{Abstract,  Resultater, Diskussion, Konklusion}, samt mere på Process View. 
+%\\ \hline 
+%1.1 & 17/12 - 13 & RR & Sidste rettelser af dokument.
+%\\ \hline 
+%\end{tabular} 
+
+
+\newpage
+\tableofcontents* %Indholdsfortegnelse
+\newpage
+\listoffigures* %Liste af figurer
+
+\listoffixmes
+
+\newpage
+\subfile{Scope}
+
+
+\appendix
+
+\bibliographystyle{ieeetr}
+\bibliography{References}
+
+\end{document}
