@@ -1,0 +1,33 @@
+\documentclass[Main]{subfiles}
+
+\begin{document}
+
+\chapter{Requirements traceability}
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{l l l} \hline
+	ID & User Requirement & System Reference \\\hline
+	1 & Do stuff 1 & S1 \\
+	2 & Do stuff 2 & S2, S3 \\\hline
+	\end{tabular}
+
+\caption{Forward}
+\label{Tab:Forward}
+\end{table}
+
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{l l l} \hline
+	System Reference & Functional Requirement & ID\\\hline
+	S1 & Some stuff 1 & 1 \\
+	S2 & Some stuff 2 & 2 \\ 
+	S3 & Some stuff 3 & 2\\\hline
+	\end{tabular}
+
+\caption{Backward}
+\label{Tab:Backward}
+\end{table}
+
+\end{document}
