@@ -9,6 +9,8 @@ This graphic shows the two year development time plan
 \startenddiff{2014}{01}{01}{2016}{06}{01}
 \pgfmathsetmacro{\timelinewidth}{14}% will be 0.3cm wider for arrow tip
 % ==============================================
+\begin{figure}[H]
+
 \begin{tikzpicture}
   \drawtimeline
   \timeentry[green]{2014}{01}{01}{2014}{03}{01}{CPP}
@@ -19,14 +21,22 @@ This graphic shows the two year development time plan
   \timeentry[brown]{2016}{01}{01}{2016}{06}{01}{OSP}
 \end{tikzpicture}
 
+\caption{Two year development plan}
+\label{fig:timeplan}
+
+\end{figure}
+
 \section{Abbreviations}
+
 \begin{itemize}
+
   \item Concept and project difinition phase (CPP)
   \item System design phase (SDP)
   \item Development phase (DP)
   \item Production phase (PP)
   \item Production and deployment phase (PDP)
   \item Operational support phase (OSP)
+
 \end{itemize}
 
 \end{document}
