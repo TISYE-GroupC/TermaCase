@@ -18,42 +18,40 @@
 
 \begin{document}
 
-\maketitle
-%\begin{titlingpage}
-%	\include{Forside}
-%\end{titlingpage}
+\begin{titlingpage}
+	\include{Frontpage}
+\end{titlingpage}
 
-
+\newpage
 \section*{Version history}
-%\begin{tabular}{p{0.05\textwidth}|p{0.1\textwidth}|p{0.05\textwidth}|p{0.7\textwidth}}
-%\hline 1.0 & 11/13 - 13 & RAB & Tilføjet en masse afsnit. Der mangler dog stadig \textit{Abstract,  Resultater, Diskussion, Konklusion}, samt mere på Process View. 
-%\\ \hline 
-%1.1 & 17/12 - 13 & RR & Sidste rettelser af dokument.
-%\\ \hline 
-%\end{tabular} 
+\begin{tabular}{p{0.05\textwidth} p{0.12\textwidth} p{0.05\textwidth} p{0.7\textwidth}}
+\hline 1.0 & 06-02-2014 & ALL & First release of SRS.
+\\ \hline 
+\end{tabular} 
 
 
 \newpage
 \tableofcontents* %Indholdsfortegnelse
-\newpage
-\listoffigures* %Liste af figurer
+%\newpage
+%\listoffigures* %Liste af figurer
 
-\listoffixmes
+%\listoffixmes
 
 \newpage
 \subfile{Scope}
-\subfile{ReferenceDocs}
+
+
+\bibliographystyle{ieeetr}
+\renewcommand{\bibname}{Reference Document}
+\bibliography{References}
+
 \subfile{Requirements}
 \subfile{TestRequirements}
 \subfile{RequirementsTraceability}
-\subfile{Other}
-%\subfile{TimePlan}
+%\subfile{Other}
+\subfile{TimePlan}
 
 
 
-\appendix
-
-\bibliographystyle{ieeetr}
-\bibliography{References}
 
 \end{document}
