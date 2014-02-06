@@ -1,0 +1,23 @@
+\documentclass[Main]{subfiles}
+\begin{document}
+
+\chapter{Time plan}
+
+% ===== user's choices =========================
+\startenddiff{2014}{01}{01}{2016}{06}{01}
+\pgfmathsetmacro{\timelinewidth}{14}% will be 0.3cm wider for arrow tip
+% ==============================================
+\begin{tikzpicture}
+    \drawtimeline
+    \timeentry{2014}{01}{01}{2014}{03}{01}{Concept and project difinition phase}
+    \timeentry{2014}{03}{01}{2014}{09}{01}{System design phase}
+    \timeentry{2014}{09}{01}{2015}{03}{01}{Development phase}
+    \timeentry{2015}{03}{01}{2015}{09}{01}{Production phase}
+    \timeentry{2015}{09}{01}{2016}{01}{01}{Production and deployment phase}
+    \timeentry{2016}{01}{01}{2016}{06}{01}{Operational support phase}
+\end{tikzpicture}
+
+
+
+\end{document}
+
