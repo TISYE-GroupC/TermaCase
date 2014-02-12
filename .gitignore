@@ -58,6 +58,7 @@
 *.out
 *.synctex.gz
 *.orig
+*.tsxx
 
 /Document/*.pdf
 /Document/**/*.pdf
