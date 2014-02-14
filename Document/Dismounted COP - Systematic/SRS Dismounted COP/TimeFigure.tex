@@ -1,0 +1,35 @@
+\documentclass[Main]{subfiles}
+\begin{document}
+
+% ===== user's choices =========================
+\startenddiff{2014}{02}{01}{2014}{11}{01}
+\pgfmathsetmacro{\timelinewidth}{14}% will be 0.3cm wider for arrow tip
+% ==============================================
+\begin{figure}[H]
+
+\begin{tikzpicture}
+  \drawtimeline
+  \timeentry[green]{2014}{02}{01}{2014}{03}{01}{CPP}
+  \timeentry[blue]{2014}{03}{01}{2014}{05}{01}{SDP}
+  \timeentry[gray]{2014}{05}{01}{2014}{07}{01}{DP}
+  \timeentry[purple]{2014}{07}{01}{2014}{09}{01}{PP}
+  \timeentry[yellow]{2014}{09}{01}{2014}{10}{01}{PDP}
+  \timeentry[brown]{2014}{10}{01}{2014}{11}{01}{OSP}
+
+  %milestones
+  \timeentry[black, opacity=1]{2014}{03}{01}{2014}{03}{01}{SSR}
+  \timeentry[black, opacity=1]{2014}{05}{01}{2014}{05}{01}{PDR}
+  \timeentry[black, opacity=1]{2014}{05}{20}{2014}{05}{20}{CDR}
+  \timeentry[black, opacity=1]{2014}{07}{01}{2014}{07}{01}{TRR}
+  \timeentry[black, opacity=1]{2014}{09}{01}{2014}{09}{01}{PRR}
+  \timeentry[black, opacity=1]{2014}{10}{01}{2014}{10}{01}{FAT}
+  \timeentry[black, opacity=1]{2014}{11}{01}{2014}{11}{01}{SAT}
+\end{tikzpicture}
+
+\caption{Eight months development plan}
+\label{fig:timeplan}
+
+\end{figure}
+
+\end{document}
+
