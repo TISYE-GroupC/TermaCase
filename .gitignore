@@ -59,6 +59,7 @@
 *.synctex.gz
 *.orig
 *.txss
+*.tks
 
 /Document/*.pdf
 /Document/**/*.pdf
