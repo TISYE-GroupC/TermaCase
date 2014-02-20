@@ -5,40 +5,64 @@
 \section{Interface design}
 
 \subsection{Power interfaces}
-All the interfaces specified in the following subsections are power interfaces.
 
 \subsubsection{P\_1.1}
-The P\_1.1 interface delivers power from the F-16 power supply to the SPS\_PCU. The power delivered is 115 VAC 400 Hz. Up to 250W will be consumed by the SPS\_PCU.
+\begin{enumerate}[label = \bfseries ID-1.\arabic*]
+\item The interface delivers power from the F-16 power supply to the SPS\_PCU. 
+\item The voltage is 115 VAC 400 Hz. 
+\item The SPS\_PCU will consume up to 250W.
+\end{enumerate}
 
 \subsubsection{P\_2.X}
-All the interfaces named P\_2.1-2.4 are power interfaces from the F-16 power supply to each DSS. The power delivered is 115 VAC 400 Hz. Up to 126W will be consumed by each DSS.
+\begin{enumerate}[label = \bfseries ID-2.\arabic*]
+\item All the interfaces named P\_2.1-2.4 are power interfaces from the F-16 power supply to each DSS. 
+\item The voltage is 115 VAC 400 Hz. 
+\item Each DSS will consume up to 126W.
+\end{enumerate}
 
 \subsubsection{P\_3.X}
-All the interfaces named P\_3.1-3.4 are power interfaces from the SPS\_PCU to each DSS. The power delivered is 28V DC. 3W will be consumed by each DSS.
+\begin{enumerate}[label = \bfseries ID-3.\arabic*]
+\item All the interfaces named P\_3.1-3.4 are power interfaces from the SPS\_PCU to each DSS. 
+\item The voltage is 28V DC. 
+\item Each DSS consumes 3W.
+\end{enumerate}
 
 \subsubsection{P\_4.1}
-The P\_4.1 interface delivers power from the SPS\_PCU to the MWS. The power delivered is 28V DC. Up to 85W will be consumed by the MWS.
+\begin{enumerate}[label = \bfseries ID-4.\arabic*]
+\item The interface delivers power from the SPS\_PCU to the MWS. 
+\item The voltage is 28V DC. 
+\item The MWS will consume up to 85W.
+\end{enumerate}
 
 \subsubsection{P\_5.1}
-The P\_5.1 interface delivers power from the F-16 PCU to the SPS\_CU. The power delivered is 28V DC. Up to 10W will be consumed by the SPS\_CU.
-
+\begin{enumerate}[label = \bfseries ID-4.\arabic*]
+\item The interface delivers power from the F-16 PCU to the SPS\_CU. 
+\item The voltage is 28V DC. 
+\item The SPS\_CU consumes up to 10W.
+\end{enumerate}
 
 \subsection{Communication and control interfaces}
 
 \subsubsection{CC\_1.X}
-The interfaces CC\_1.1-1.4 are used for control of each DSS by the MWS. 
+\begin{enumerate}[label = \bfseries ID-5.\arabic*]
+\item The interfaces CC\_1.1-1.4 are used for control of each DSS by the MWS. 
+\end{enumerate}
 
 \subsubsection{CC\_2.X}
-The interfaces CC\_2.1-2.8 are used for igniting payloads by the DSS'.
+\begin{enumerate}[label = \bfseries ID-6.\arabic*]
+\item The interfaces CC\_2.1-2.8 are used for igniting payloads by the DSS'.
+\end{enumerate}
 
 \subsubsection{CC\_3.1}
-The interface CC\_3.1 are used to turn on/off the power to the pod from the cockpit unit.
+\begin{enumerate}[label = \bfseries ID-7.\arabic*]
+\item The interface CC\_3.1 are used to turn on/off the power to the pod from the cockpit unit.
+\end{enumerate}
 
 
 \subsection{Multi connect bus interfaces}
 
 \subsubsection{MCB\_1.1}
-\begin{enumerate}[label = \bfseries ID-\arabic*]
+\begin{enumerate}[label = \bfseries ID-8.\arabic*]
 \setcounter{enumi}{0}
 
 \item The interface is of type real-time data transfer and will have a maximal time of providing measured data in under 5 ms. (SR-19)
