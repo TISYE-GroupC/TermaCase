@@ -37,8 +37,7 @@
 \subsection{Multi connect bus interfaces}
 
 \subsubsection{MCB\_1.1}
-\begin{enumerate}[{4.1.3.1}-1]
-\setcounter{enumi}{0}
+\begin{enumerate}[label = \bfseries ID-\arabic*]
 
 \item The interface is of type real-time data transfer and will have a maximal time of providing measured data in under 5 ms. (SR-19)
 
@@ -46,7 +45,9 @@
 
 \item The interface provides two angles for each threat detected -- the first is 180 degree vertical, the second is 360 degree horizontal. (SR-6, SR-7 (SR-9?))
 
-\item The interface provides a list of patterns the flares can be dispatched 
+\item The interface provides a list of patterns the flares can be dispatched in.
+
+\item The interface provides a launch message for manual mode and semi-automatic mode to launch flares in the selected pattern.
 \end{enumerate}
 
 %mode, fire (manual and semi), pattern, (de)activate power to pod
