@@ -22,7 +22,7 @@
 
 \item The pilot can select to fire flares of the selected pattern with a click of a button.
 
-\item The maintenance crew can load flares form the 8 hatches in the pod.
+\item The maintenance crew can load flares form 8 hatches in the pod.
 
 \item The pilot can turn off the power to the pod by clicking a button, flicking a switch or turning a switch.
 
@@ -33,11 +33,9 @@
 
 \begin{enumerate}[label=\bfseries DDD-2.\arabic*:]
 
-\item If no more flairs are available, the system will play a sound when the fire-action would be performed.
-
 \item The time it takes for the new mode to appear from the pilot selects a new mode shall be less than 30 ms.
 
-\item When flairs are fires the remaining numbers shall be updated in less than 30 ms.
+\item When flairs are fired the status sent to the Mission Computer shall be updated in less than 30 ms.
 
 \item If the pilot turns on the pod after it has been disabled, the pod shall be ready in under 500 ms.
 
@@ -47,8 +45,6 @@
 %Design decisions on how system databases/data files will appear to the user.
 
 \begin{enumerate}[label=\bfseries DDD-3.\arabic*:]
-
-\item The angle of a threat shall be send to the Cockpit Unit for processing in the pilots helmet.
 
 \item The selected mode shall be shown as text in the Cockpit Unit.
 
@@ -77,14 +73,5 @@
 
 \end{enumerate}
 
-
-\section{Other}
-%Other system-wide design decisions made in response to requirements, such as selected approach to providing required  exibility, availability, and maintainability
-
-\begin{enumerate}[label=\bfseries DDD-5.\arabic*:]
-
-\item The flairs shall be loaded from 8 hatches in the pod by a mechanic.
-
-\end{enumerate}
 
 \end{document}
