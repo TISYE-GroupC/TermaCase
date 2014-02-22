@@ -21,11 +21,11 @@ SR-4 & The pod shall include a minimum of eight standard magazines & DDD-1.7 \\
 
 SR-5 & The pod shall be able to dispense forwards, downwards and sideways & DDD-1.6 \\
 
-SR-6 & Threats shall be transmitted to the aircraft mission computer in body frame format (relative to aircraft) for displaying purposes &  \\
+SR-6 & Threats shall be transmitted to the aircraft mission computer in body frame format (relative to aircraft) for displaying purposes &  DDD-1.2\\
 
 SR-7 & The system shall provide the aircraft mission computer with current status information & DDD-1.1, DDD-2.1, DDD-2.2 \\
 
-SR-8 &  The system shall run built-in test and make the results available to the aircraft mission computer &  \\
+SR-8 &  The system shall run built-in test and make the results available to the aircraft mission computer & DDD-1.4 \\
 
 SR-9 & The system shall provide the aircraft intercom system audio cues and warnings & DDD-1.2 \\
 
@@ -87,33 +87,33 @@ SR-31 & The power consumption of the pod shall not exceed 700W &  \\\hline
 
 \begin{longtable}{l p{10.4cm} p{1.8cm} } \hline
 System Reference & Functional Requirement & SR-ID\\\hline
-\ref{DDD-11} & The mission computer shows which mode the system is in. &  \\
+\ref{DDD-11} & The mission computer shows which mode the system is in. & SR-7 \\
 
-\ref{DDD-12} & The mission warning system provides a signal with a threat's location to the intercom system. & SR-6,9 \\
+\ref{DDD-12} & The mission warning system provides a signal with a threat's location to the intercom system. & SR-6, 9 \\
 
-\ref{DDD-13} & The mission computer shows how many flairs are left. & SR-7\\
+\ref{DDD-13} & The mission computer shows how many flairs are left. & SR-7, 10\\
 
-\ref{DDD-14} & The mission computer shows if all DSSs are available. & SR-8\\
+\ref{DDD-14} & The mission computer shows if all DSSs are available. & SR-8, 10\\
 
-\ref{DDD-15} & The pilot can select mode with a physical unit -- either a button, flip switch or turn switch. & SR-1,2,3\\
+\ref{DDD-15} & The pilot can select mode with a physical unit -- either a button, flip switch or turn switch. & SR-1, 2, 3\\
 
-\ref{DDD-16} & The pilot can select to fire flares of the selected pattern with a click of a button. & \\
+\ref{DDD-16} & The pilot can select to fire flares of the selected pattern with a click of a button. & SR-1, 2, 5\\
 
 \ref{DDD-17} & The maintenance crew can load flares form 8 hatches in the pod. & SR-4\\
 
 \ref{DDD-18} & The pilot can turn off the power to the pod by clicking a button, flicking a switch or turning a switch. & SR-11\\
 
-\ref{DDD-21} & The time it takes for the new mode to appear from the pilot selects a new mode shall be less than 30 ms. & \\
+\ref{DDD-21} & The time it takes for the new mode to appear from the pilot selects a new mode shall be less than 30 ms. & SR-1, 2, 3, 7\\
 
-\ref{DDD-22} & When flairs are fired the status sent to the Mission Computer shall be updated in less than 30 ms.& \\
+\ref{DDD-22} & When flairs are fired the status sent to the Mission Computer shall be updated in less than 30 ms.& SR-7\\
 
-\ref{DDD-23} & If the pilot turns on the pod after it has been disabled, the pod shall be ready in under 500 ms.& \\
+\ref{DDD-23} & If the pilot turns on the pod after it has been disabled, the pod shall be ready in under 500 ms.& SR-11\\
 
-\ref{DDD-31} & The selected mode shall be shown as text in the Cockpit Unit. & SR-7\\
+\ref{DDD-31} & The selected mode shall be shown as text on the mission computer. & SR-7\\
 
-\ref{DDD-41} &  The pod shall be mounted on the aircraft's left wing with standard T-hooks spaced by 13 inches. & SR-28 \\
+\ref{DDD-41} &  The pod shall be mounted on the aircraft's left wing with standard T-hooks spaced by 13 inches. & SR-28, 30\\
 
-\ref{DDD-42} & The pod must be no longer than 120 cm, no wider than 40 cm, no taller 40 cm and aerodynamic. & RFPS, SR-3.1\\
+\ref{DDD-42} & The pod must be no longer than 120 cm, no wider than 40 cm, no taller 40 cm and aerodynamic. & RFPS, SR-3.1, 18\\
 
 \ref{DDD-43} & The pod shall be colored in light gray (FS 26373). & \\
 
@@ -150,51 +150,52 @@ System Reference & Functional Requirement & SR-ID\\\hline
 %\ref{F-15} & Validate "fire" command& \\
 
 
-\ref{ID-11} & The interface delivers power from the F-16 power supply to the SPS\_PCU.& \\
-
-\ref{ID-12} & The voltage is 115 VAC 400 Hz.& \\
-
-\ref{ID-13} & The SPS\_PCU will consume up to 250W. & \\
-
-\ref{ID-21} & All the interfaces named P\_2.1-2.4 are power interfaces from the F-16 power supply to each DSS. & \\
-
-\ref{ID-22} & The voltage is 115 VAC 400 Hz. & \\
-
-\ref{ID-23} & Each DSS will consume up to 126W. & \\
-
-\ref{ID-31} & All the interfaces named P\_3.1-3.4 are power interfaces from the SPS\_PCU to each DSS. & \\
-
-\ref{ID-32} & The voltage is 28V DC. & \\
-
-\ref{ID-33} & Each DSS consumes 3W. & \\
-
-\ref{ID-41} & The interface delivers power from the SPS\_PCU to the MWS. & \\
-
-\ref{ID-42} & The voltage is 28V DC. & \\
-
-\ref{ID-43} & The MWS will consume up to 85W. & \\
-
-\ref{ID-51} & The interface delivers power from the F-16 PCU to the SPS\_CU. & \\
-
-\ref{ID-52} & The voltage is 28V DC. & \\
-
-\ref{ID-53} & The SPS\_CU consumes up to 10W. & \\
-
-\ref{ID-61} & The interfaces CC\_1.1-1.4 are used for control of each DSS by the MWS. & \\
-
-\ref{ID-71} & The interfaces CC\_2.1-2.8 are used for igniting payloads by the DSS'. & \\
-
-\ref{ID-81} & The interface CC\_3.1 are used to turn on/off the power to the pod from the cockpit unit. & \\
-
-\ref{ID-91} &The interface is of type real-time data transfer and will have a maximal time of providing measured data in under 5 ms. & SR-19 \\
-
-\ref{ID-92} & The interface sets 3 different modes up to be chosen; automatic, semi-automatic and manual. & SR-1,2,3\\
-
-\ref{ID-93} & The interface provides two angles for each threat detected -- the first is 180 degree vertical, the second is 360 degree horizontal. & SR-6.7.9\fxnote{Er 9?}\\
-
-\ref{ID-94} & The interface provides a list of patterns the flares can be dispatched in.  & \\
-
-\ref{ID-95} & The interface provides a launch message for manual mode and semi-automatic mode to launch flares in the selected pattern. & \\
+%\ref{ID-11} & The interface delivers power from the F-16 power supply to the SPS\_PCU.& \\
+%
+%\ref{ID-12} & The voltage is 115 VAC 400 Hz.& \\
+%
+%\ref{ID-13} & The SPS\_PCU will consume up to 250W. & \\
+%
+%\ref{ID-21} & All the interfaces named P\_2.1-2.4 are power interfaces from the F-16 power supply to each DSS. & \\
+%
+%\ref{ID-22} & The voltage is 115 VAC 400 Hz. & \\
+%
+%\ref{ID-23} & Each DSS will consume up to 126W. & \\
+%
+%\ref{ID-31} & All the interfaces named P\_3.1-3.4 are power interfaces from the SPS\_PCU to each DSS. & \\
+%
+%\ref{ID-32} & The voltage is 28V DC. & \\
+%
+%\ref{ID-33} & Each DSS consumes 3W. & \\
+%
+%\ref{ID-41} & The interface delivers power from the SPS\_PCU to the MWS. & \\
+%
+%\ref{ID-42} & The voltage is 28V DC. & \\
+%
+%\ref{ID-43} & The MWS will consume up to 85W. & \\
+%
+%\ref{ID-51} & The interface delivers power from the F-16 PCU to the SPS\_CU. & \\
+%
+%\ref{ID-52} & The voltage is 28V DC. & \\
+%
+%\ref{ID-53} & The SPS\_CU consumes up to 10W. & \\
+%
+%\ref{ID-61} & The interfaces CC\_1.1-1.4 are used for control of each DSS by the MWS. & \\
+%
+%\ref{ID-71} & The interfaces CC\_2.1-2.8 are used for igniting payloads by the DSS'. & \\
+%
+%\ref{ID-81} & The interface CC\_3.1 are used to turn on/off the power to the pod from the cockpit unit. & \\
+%
+%\ref{ID-91} &The interface is of type real-time data transfer and will have a maximal time of providing measured data in under 5 ms. & SR-19 \\
+%
+%\ref{ID-92} & The interface sets 3 different modes up to be chosen; automatic, semi-automatic and manual. & SR-1,2,3\\
+%
+%\ref{ID-93} & The interface provides two angles for each threat detected -- the first is 180 degree vertical, the second is 360 degree horizontal. & SR-6.7.9\\
+%
+%\ref{ID-94} & The interface provides a list of patterns the flares can be dispatched in.  & SR-7\\
+%
+%\newpage
+%\ref{ID-95} & The interface provides a launch message for manual mode and semi-automatic mode to launch flares in the selected pattern. & \\
 
 \\\hline
 \caption{Backward Traceability Matrix}
