@@ -16,63 +16,63 @@ This is also illustrated in Figure \ref{fig:FFD} below.
 
 \subsection{System functions}
 \begin{enumerate}[label=F.\arabic*]
-\item Accept User selection of dispensing pattern
+\item Accept User selection of dispensing pattern\label{F-1}
 
 Accepts dispensing pattern selection from the User in the form of a physical switch input, and outputs it to \ref{enum:Ignite}.
 
-\item Accept User selection of operational mode
+\item Accept User selection of operational mode.\label{F-2}
 
 Accepts operational mode selection from the User in the form of a physical switch input, and outputs it to \ref{enum:Val}.
 
-\item Receive dispensing pattern programs
+\item Receive dispensing pattern programs.\label{F-3}
 
-Receives and saves predetermined chaff/flare dispensing programs
+Receives and saves predetermined chaff/flare dispensing programs.
 
-\item Receive payload magazines
+\item Receive payload magazines.\label{F-4}
 
-Receives and stores payload magazines, ready for use
+Receives and stores payload magazines, ready for use.
 
-\item Distribute electricity
+\item Distribute electricity.\label{F-5}
 
 Distributes HV AC Power from the F-16 Power Supply and distributes it the all functions that require it (F.7-9)
 
-\item Support weight
+\item Support weight\label{F-6}
 
 Distributes the weight of system to the suspension structure and the F-16 hard-point
 
-\item Detect threats
+\item Detect threats\label{F-7}
 
 Scans surroundings for incoming threats and alerts F.10-11. It also commands \ref{enum:Val} to fire in case of automatic operation mode.
 
-\item Convert power AC/DC
+\item Convert power AC/DC\label{F-8}
 
 Converts high voltage AC power from the F-16 Power Supply to 28V DC power and distributes it to the function that require it (F.7,9-11,13,15)
 
-\item Ignite payloads\label{enum:Ignite}
+\item Ignite payloads\label{enum:Ignite}\label{F-9}
 
 Accepts pattern input from F.1 and "fire" command from F.15 and ignites payloads in the given pattern.
 
-\item Communicate threat info to F-16 Mission Computer
+\item Communicate threat info to F-16 Mission Computer\label{F-10}
 
 Accepts threat information from F.7 and outputs it to the F-16 Mission Computer.
 
-\item Communicate threat info to F-16 Intercom System
+\item Communicate threat info to F-16 Intercom System\label{F-11}
 
 Accepts threat information from F.7 and outputs it to the F-16 Intercom System.
 
-\item Receive "Fire" command
+\item Receive "Fire" command\label{F-12}
 
 Accepts "Fire" command from the User in the form of a physical button, and outputs it to F.15.
 
-\item Lock dispensing system
+\item Lock dispensing system\label{F-13}
 
 Accepts "lock" signal from the F-16 Mission Computer, and outputs it to F.15.
 
-\item Toggle pod power supply
+\item Toggle pod power supply\label{F-14}
 
 Accepts on/off signal from the User in the form of a physical switch , and outputs it to F.5.
 
-\item Validate "fire" command\label{enum:Val}
+\item Validate "fire" command\label{enum:Val}\label{F-15}
 
 Accepts "lock" input from F.13, "mode" input from F.2, "fire" input from F.7 or F.12, and outputs a "fire" command to F.9.
 
