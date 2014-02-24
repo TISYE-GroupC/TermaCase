@@ -337,8 +337,8 @@
 %--------------------------------------------------
 \newcommand{\TCdescWidth}{0.15 \textwidth}
 \newcommand{\TCIntroWidth}{0.8\textwidth}
-\newcommand{\TCprep}[1]{\textbf{Forberedelse:} & \parbox[t]{\TCIntroWidth}{#1}}
-\newcommand{\TCdesc}[1]{\\ \textbf{Beskrivelse:} & \parbox[t]{\TCIntroWidth}{#1}}
+\newcommand{\TCprep}[1]{\textbf{Preparation:} & \parbox[t]{\TCIntroWidth}{#1}}
+\newcommand{\TCdesc}[1]{\\ \textbf{Description:} & \parbox[t]{\TCIntroWidth}{#1}}
 
 \newenvironment{TestCaseIntro}
 {\begin{longtable}{p{\TCdescWidth} p{\TCIntroWidth}}}
@@ -362,7 +362,7 @@
 
 \newenvironment{TestCase}
 {\begin{longtable}{ p{\TCsteps}  p{\TCexpected} p{\TCmethod} p{\TCsucces} }
-\hline \textbf{Trin} & \textbf{Metode} & \textbf{Forventet} & \textbf{Succes} \\ \hline}
+\hline \textbf{Step} & \textbf{Method} & \textbf{Expected} & \textbf{Succes} \\ \hline}
 {\hline \end{longtable}}
 
 \newcommand{\TC}[4]{\parbox[t]{\TCsteps}{#1} & \parbox[t]{\TCmethod}{#2} &\parbox[t]{\TCexpected}{#3}&  \parbox[t]{\TCsucces}{#4} \\}

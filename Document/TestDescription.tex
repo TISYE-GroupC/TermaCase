@@ -3,31 +3,162 @@
 
 \chapter{Test description}
 
-\textbf{Test SR-1: }
- The system shall be able to operate in manual mode which will dispense the program selected by the pilot.
+\textbf{Tests: }
+SR-1, SR-4, SR-7, SR-8, SR-10, SR-11, SR-16, SR-18, SR-20, SR-28, SR-30.
+
 
 \begin{TestCaseIntro}
-\TCprep{Preperation of sorts \\Anything here}
-\TCdesc{Description of what is ablut to happen}
+\TCprep{The plane must remain on the ground. The system must be reset.}
+\TCdesc{Test integration of the system on the ground.}
 \end{TestCaseIntro}
 
 \begin{TestCase}
 \TC
-{Steps}
-{Aktion to take}
-{Expectation}
-{Leave blank}
+{1}
+{The pod is mounted under the left wing}
+{The pod remains mounted under the left wing}
+{}
 
 \TC
-{Steps}
-{Aktion to take}
-{Expectation}
-{Leave blank}
+{2}
+{Inspect whether the pod obstructs any current weapons.}
+{It does not.}
+{}
+
+\TC
+{3}
+{Eight magazines shall be loaded into the pod.}
+{}
+{}
+
+\TC
+{4}
+{Power to the pod is established to the pod from the cockpit.}
+{Status on the mission computer shows loaded magazines ready for use and system status.}
+{}
+
+\TC
+{5}
+{A dispensing program is loaded into the Cockpit Unit.}
+{The programs are stored.}
+{}
+
+\TC
+{6}
+{The system is placed in manual-mode and the "fire"-button is activated.}
+{The system will not fire.}
+{}
+
+\end{TestCase}
+
+
+\textbf{Tests: SR-29.}
+
+
+\begin{TestCaseIntro}
+\TCprep{The pod is loaded with a maximal amount of magazines. 
+The pod shall be fully assembled. 
+The pod does not need to be powered up.}
+\TCdesc{The weight of the pod is testing for not exceeding the specified amount.}
+\end{TestCaseIntro}
+
+\begin{TestCase}
+\TC
+{1}
+{The pod is placed upon a weight.}
+{The weight is less than 270 kg.}
+{}
 \end{TestCase}
 
 
 
+\textbf{Tests: SR-22}
 
 
+\begin{TestCaseIntro}
+\TCprep{The pod must be fully assembled and loaded.
+The pod does not need to be powered up.}
+\TCdesc{The pod is tested for exposure to acceleration.}
+\end{TestCaseIntro}
+
+\begin{TestCase}
+\TC
+{1}
+{Mount the pod in an centrifuge}
+{}
+{}
+
+\TC
+{1}
+{Test for downwards acceleration for up to 11g}
+{The structure will remain intact}
+{}
+
+\TC
+{1}
+{Test for upwards acceleration for up to 25g}
+{The structure will remain intact}
+{}
+
+\TC
+{1}
+{Test for forwards acceleration for up to 5g}
+{The structure will remain intact}
+{}
+
+\TC
+{1}
+{Test for aft acceleration for up to 2.5g}
+{The structure will remain intact}
+{}
+
+\TC
+{1}
+{Dismount the pod and power it up.}
+{All systems }
+{}
+\end{TestCase}
+
+
+\textbf{Tests: SR-23, SR-24}
+
+
+\begin{TestCaseIntro}
+\TCprep{The pod is loaded with a maximal amount of magazines. 
+The pod shall be fully assembled and powered up.}
+\TCdesc{The pod's resistance to high temperature.}
+\end{TestCaseIntro}
+
+\begin{TestCase}
+\TC
+{1}
+{Place the pod in a temperature test chamber.}
+{}
+{}
+
+
+\TC
+{2}
+{Heat the chamber to 102$^\circ$ Celsius for 25 minutes. 
+Remove from test chamber and let it cool for 10 minutes.}
+{Self-test reports no failures.}
+{}
+
+
+\TC
+{3}
+{Remove from test chamber and let it cool for 10 minutes.}
+{}
+{}
+
+\TC
+{4}
+{Repeat step 1 and heat the chamber to 151$^\circ$ Celsius for 3 minutes. 
+Remove from test chamber and let it cool for 10 minutes.}
+{Self-test reports no failures.}
+{}
+
+
+\end{TestCase}
 
 \end{document}
