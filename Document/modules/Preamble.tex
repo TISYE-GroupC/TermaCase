@@ -5,13 +5,8 @@
 
 %Tekst i fotter
 \newcommand{\footerText}{\thepage\xspace /\pageref{LastPage}}
-\newcommand{\ProjectName}{433 MHz styring af AeroQuad}
-
 
 \chapterstyle{hangnum}
-
-
-
 
 \nouppercaseheads
 \makepagestyle{mystyle} 
@@ -367,8 +362,8 @@
 
 \newenvironment{TestCase}
 {\begin{longtable}{ p{\TCsteps}  p{\TCexpected} p{\TCmethod} p{\TCsucces} }
-\hline \textbf{Trin} & \textbf{Metode} & \textbf{Forventet} & \textbf{Succes}}
-{\\ \hline \end{longtable}}
+\hline \textbf{Trin} & \textbf{Metode} & \textbf{Forventet} & \textbf{Succes} \\ \hline}
+{\hline \end{longtable}}
 
-\newcommand{\TC}[4]{\\ \hline \parbox[t]{\TCsteps}{#1} & \parbox[t]{\TCmethod}{#2} &\parbox[t]{\TCexpected}{#3}&  \parbox[t]{\TCsucces}{#4} }
+\newcommand{\TC}[4]{\parbox[t]{\TCsteps}{#1} & \parbox[t]{\TCmethod}{#2} &\parbox[t]{\TCexpected}{#3}&  \parbox[t]{\TCsucces}{#4} \\}
 %--------------------------------------------------
