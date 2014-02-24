@@ -39,7 +39,7 @@ SR-1, SR-4, SR-7, SR-8, SR-10, SR-11, SR-14, SR-16, SR-18, SR-20, SR-28, SR-30.
 
 \end{TestCase}
 
-
+\newpage
 \textbf{Tests: } SR-29.
 
 
@@ -133,7 +133,7 @@ Remove from test chamber and let it cool for 10 minutes.}
 
 \newpage
 
-\textbf{Tests:} SR-2, SR-5, SR-6, SR-7, SR-9, SR-12, SR-17, SR-31.
+\textbf{Tests:} SR-2, SR-3, SR-5, SR-6, SR-7, SR-9, SR-12, SR-13, SR-15, SR-17, SR-21, SR-25, SR-26, SR-31.
 
 
 \begin{TestCaseIntro}
@@ -168,10 +168,19 @@ The system transmits audio cues to the pilot.}
 {The system dispenses the test pattern at the required rates.
 The power consumption does not exceed 700 W.}
 
+\TC
+{The system is set in automatic mode.}
+{The system's status is shown on the mission computer in less than 5 ms.}
+
+\TC
+{A threat is simulated with dummy sensors.}
+{The system fires the test pattern immediately.}
+
+
+\TC
+{Send zeroize signal to the system from the mission computer.}
+{All sensitive data is erased.}
 \end{TestCase}
-
-
-
 
 
 
