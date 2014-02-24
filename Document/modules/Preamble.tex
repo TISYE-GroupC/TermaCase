@@ -345,6 +345,12 @@
 {\end{longtable}}
 %--------------------------------------------------
 
+\newcounter{ctStep}
+\setcounter{ctStep}{0}
+\newcommand{\step}{%
+\addtocounter{ctStep}{1}%
+\arabic{ctStep}}
+
 
 %--------------------------------------------------
 %\begin{TestCase}
@@ -363,7 +369,8 @@
 \newenvironment{TestCase}
 {\begin{longtable}{ p{\TCsteps}  p{\TCexpected} p{\TCmethod} p{\TCsucces} }
 \hline \textbf{Step} & \textbf{Method} & \textbf{Expected} & \textbf{Succes} \\ \hline}
-{\hline \end{longtable}}
+{\hline \end{longtable}
+\setcounter{ctStep}{0}}
 
-\newcommand{\TC}[4]{\parbox[t]{\TCsteps}{#1} & \parbox[t]{\TCmethod}{#2} &\parbox[t]{\TCexpected}{#3}&  \parbox[t]{\TCsucces}{#4} \\}
+\newcommand{\TC}[2]{\parbox[t]{\TCsteps}{\step} &\parbox[t]{\TCmethod}{#1} &\parbox[t]{\TCexpected}{#2}&  \\}
 %--------------------------------------------------
