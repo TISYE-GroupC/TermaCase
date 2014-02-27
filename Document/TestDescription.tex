@@ -1,48 +1,16 @@
 \documentclass[Main]{subfiles}
 \begin{document}
 
-Doc\fxnote{Order must be fixed}
-\fxnote{Identifiers on tests}
+\section{Test 1}
+\section{Test 2}
+\section{Test 3}
+\section{Test 4}
+\section{Test 5}
 
 \chapter{Test description}
 
-\textbf{Tests: }
-SR-1, SR-4, SR-7, SR-8, SR-10, SR-11, SR-14, SR-16, SR-18, SR-20, SR-28, SR-30.
+\section{Test 1}
 
-
-\begin{TestCaseIntro}
-\TCprep{The plane must remain on the ground. The system must be reset.}
-\TCdesc{Test integration of the system on the ground.}
-\end{TestCaseIntro}
-
-\begin{TestCase}
-\TC
-{The pod is mounted under the left wing}
-{The pod remains mounted under the left wing}
-
-\TC
-{Inspect whether the pod obstructs any current weapons.}
-{It does not.}
-
-\TC
-{Eight magazines shall be loaded into the pod.}
-{}
-
-\TC
-{Power to the pod is established to the pod from the cockpit.}
-{Status on the mission computer shows loaded magazines ready for use and system status.}
-
-\TC
-{A dispensing program is loaded into the Cockpit Unit.}
-{The programs are stored.}
-
-\TC
-{The system is placed in manual-mode and the "fire"-button is activated.}
-{The system will not fire.}
-
-\end{TestCase}
-
-\newpage
 \textbf{Tests: } SR-29.
 
 
@@ -62,6 +30,47 @@ The pod does not need to be powered up.}
 
 
 \newpage
+\section{Test 2}
+\textbf{Tests: }
+SR-1, SR-4, SR-7, SR-8, SR-10, SR-11, SR-14, SR-16, SR-18, SR-20, SR-28, SR-30.
+
+
+\begin{TestCaseIntro}
+\TCprep{The plane must remain on the ground. The system must be reset.}
+\TCdesc{Test integration of the system on the ground.}
+\end{TestCaseIntro}
+
+\begin{TestCase}
+\TC
+{The pod is mounted under the left wing}
+{The pod remains mounted under the left wing}
+
+\TC
+{Inspect whether the pod obstructs any current weapons.}
+{The pod does not obstruct any current weapon systems.}
+
+\TC
+{Eight magazines shall be loaded into the pod.}
+{}
+
+\TC
+{Power to the pod is established to the pod from the cockpit.}
+{Status on the mission computer shows loaded magazines ready for use and system status.}
+
+\TC
+{A dispensing program is loaded into the Cockpit Unit.}
+{The programs are stored.}
+
+\TC
+{The system is placed in manual-mode and the "fire"-button is activated.}
+{The system will not fire.}
+\\
+
+\end{TestCase}
+
+
+\newpage
+\section{Test 3}
 \textbf{Tests: } SR-22.
 
 
@@ -94,12 +103,14 @@ The pod does not need to be powered up.}
 
 \TC
 {Dismount the pod and power it up.}
-{All systems}
+{All systems powers up and report no failures}
 
 \end{TestCase}
 
 
 \newpage
+\section{Test 4}
+
 \textbf{Tests: SR-23, SR-24}
 
 
@@ -116,28 +127,32 @@ The pod shall be fully assembled and powered up.}
 
 
 \TC
-{Heat the chamber to 102$^\circ$ Celsius for 25 minutes. 
-Remove from test chamber and let it cool for 10 minutes.}
-{Self-test reports no failures.}
+{Heat the chamber to 102$^\circ$ Celsius for 25 minutes.}
+{}
 
 
 \TC
 {Remove from test chamber and let it cool for 10 minutes.}
+{Self-test reports no failures.}
+
+\TC
+{Repeat step 1 and heat the chamber to 151$^\circ$ Celsius for 3 minutes.} 
 {}
 
 \TC
-{Repeat step 1 and heat the chamber to 151$^\circ$ Celsius for 3 minutes. 
-Remove from test chamber and let it cool for 10 minutes.}
+{Remove from test chamber and let it cool for 10 minutes.}
 {Self-test reports no failures.}
 
-
+\\
 \end{TestCase}
 
 
 \newpage
+\section{Test 5}
 
 \textbf{Tests:} SR-2, SR-3, SR-5, SR-6, SR-7, SR-9, SR-12, SR-13, SR-15, SR-17, SR-21, SR-25, SR-26, SR-31.
 
+\vspace{-15pt}
 
 \begin{TestCaseIntro}
 \TCprep{The pod is loaded with live magazines and dummy sensors. 
@@ -150,7 +165,7 @@ The test pattern will fire 20 payloads pr second, 2 at a time, 10 forwards and b
 The test bench will simulate the interface of an F-16 being in flight.}
 \TCdesc{Test the pod's communication and power consumption.}
 \end{TestCaseIntro}
-
+\vspace{-20pt}
 \begin{TestCase}
 \TC
 {Connect the pod to an electrical test bench.}
@@ -184,6 +199,7 @@ The power consumption does not exceed 700 W.}
 {Send zeroize signal to the system from the mission computer.}
 {All sensitive data is erased.}
 \end{TestCase}
+
 
 
 
