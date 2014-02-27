@@ -1,12 +1,5 @@
 \documentclass[Main]{subfiles}
 \begin{document}
-
-\section{Test 1}
-\section{Test 2}
-\section{Test 3}
-\section{Test 4}
-\section{Test 5}
-
 \chapter{Test description}
 
 \section{Test 1}
@@ -31,41 +24,55 @@ The pod does not need to be powered up.}
 
 \newpage
 \section{Test 2}
-\textbf{Tests: }
-SR-1, SR-4, SR-7, SR-8, SR-10, SR-11, SR-14, SR-16, SR-18, SR-20, SR-28, SR-30.
 
+\textbf{Tests:} SR-2, SR-3, SR-5, SR-6, SR-7, SR-9, SR-12, SR-13, SR-15, SR-17, SR-21, SR-25, SR-26, SR-31.
+
+\vspace{-15pt}
 
 \begin{TestCaseIntro}
-\TCprep{The plane must remain on the ground. The system must be reset.}
-\TCdesc{Test integration of the system on the ground.}
+\TCprep{The pod is loaded with live magazines and dummy sensors. 
+The pod shall be fully assembled and powered up.
+The system shall start in semi-automatic mode.
+\\
+The test pattern shall be selected.
+The test pattern will fire 20 payloads pr second, 2 at a time, 10 forwards and backwards, 10 to each side.
+\\
+The test bench will simulate the interface of an F-16 being in flight.}
+\TCdesc{Test the pod's communication and power consumption.}
 \end{TestCaseIntro}
-
+\vspace{-20pt}
 \begin{TestCase}
 \TC
-{The pod is mounted under the left wing}
-{The pod remains mounted under the left wing}
-
-\TC
-{Inspect whether the pod obstructs any current weapons.}
-{The pod does not obstruct any current weapon systems.}
-
-\TC
-{Eight magazines shall be loaded into the pod.}
+{Connect the pod to an electrical test bench.}
 {}
 
 \TC
-{Power to the pod is established to the pod from the cockpit.}
-{Status on the mission computer shows loaded magazines ready for use and system status.}
+{Request status using the MIL-STD-1553-B databus}
+{System responds with status in less than 5 ms.}
 
 \TC
-{A dispensing program is loaded into the Cockpit Unit.}
-{The programs are stored.}
+{A threat is simulated with dummy sensors.}
+{The system reports a threat within 5 ms.
+The system transmits audio cues to the pilot.}
+
 
 \TC
-{The system is placed in manual-mode and the "fire"-button is activated.}
-{The system will not fire.}
-\\
+{A fire command is given to the system.}
+{The system dispenses the test pattern at the required rates.
+The power consumption does not exceed 700 W.}
 
+\TC
+{The system is set in automatic mode.}
+{The system's status is shown on the mission computer in less than 5 ms.}
+
+\TC
+{A threat is simulated with dummy sensors.}
+{The system fires the test pattern immediately.}
+
+
+\TC
+{Send zeroize signal to the system from the mission computer.}
+{All sensitive data is erased.}
 \end{TestCase}
 
 
@@ -149,66 +156,42 @@ The pod shall be fully assembled and powered up.}
 
 \newpage
 \section{Test 5}
+\textbf{Tests: }
+SR-1, SR-4, SR-7, SR-8, SR-10, SR-11, SR-14, SR-16, SR-18, SR-20, SR-28, SR-30.
 
-\textbf{Tests:} SR-2, SR-3, SR-5, SR-6, SR-7, SR-9, SR-12, SR-13, SR-15, SR-17, SR-21, SR-25, SR-26, SR-31.
-
-\vspace{-15pt}
 
 \begin{TestCaseIntro}
-\TCprep{The pod is loaded with live magazines and dummy sensors. 
-The pod shall be fully assembled and powered up.
-The system shall start in semi-automatic mode.
-\\
-The test pattern shall be selected.
-The test pattern will fire 20 payloads pr second, 2 at a time, 10 forwards and backwards, 10 to each side.
-\\
-The test bench will simulate the interface of an F-16 being in flight.}
-\TCdesc{Test the pod's communication and power consumption.}
+\TCprep{The plane must remain on the ground. The system must be reset.}
+\TCdesc{Test integration of the system on the ground.}
 \end{TestCaseIntro}
-\vspace{-20pt}
+
 \begin{TestCase}
 \TC
-{Connect the pod to an electrical test bench.}
+{The pod is mounted under the left wing}
+{The pod remains mounted under the left wing}
+
+\TC
+{Inspect whether the pod obstructs any current weapons.}
+{The pod does not obstruct any current weapon systems.}
+
+\TC
+{Eight magazines shall be loaded into the pod.}
 {}
 
 \TC
-{Request status using the MIL-STD-1553-B databus}
-{System responds with status in less than 5 ms.}
+{Power to the pod is established to the pod from the cockpit.}
+{Status on the mission computer shows loaded magazines ready for use and system status.}
 
 \TC
-{A threat is simulated with dummy sensors.}
-{The system reports a threat within 5 ms.
-The system transmits audio cues to the pilot.}
-
+{A dispensing program is loaded into the Cockpit Unit.}
+{The programs are stored.}
 
 \TC
-{A fire command is given to the system.}
-{The system dispenses the test pattern at the required rates.
-The power consumption does not exceed 700 W.}
+{The system is placed in manual-mode and the "fire"-button is activated.}
+{The system will not fire.}
+\\
 
-\TC
-{The system is set in automatic mode.}
-{The system's status is shown on the mission computer in less than 5 ms.}
-
-\TC
-{A threat is simulated with dummy sensors.}
-{The system fires the test pattern immediately.}
-
-
-\TC
-{Send zeroize signal to the system from the mission computer.}
-{All sensitive data is erased.}
 \end{TestCase}
-
-
-
-
-
-
-
-
-
-
 
 
 \end{document}
