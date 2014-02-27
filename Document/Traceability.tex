@@ -3,17 +3,168 @@
 \begin{document}
 
 \chapter{Forward traceability}
+Table \ref{ForwardTrace} list the link between system requirements and system test. The tests, which the system requirements are linked, validates the requirement. 
 
-\begin{TraceForward}{SR}{DDD}
+The system requirement SR-27 does not have any test method specified. 
+This requirement is validate indirectly through the fact that the system is able to dispense payloads in the preprogrammed patterns.
+
+Optimal coverage against missile threads is based on the dispensed patterns. The optimal patterns are to be developed and continuously update throughout the project phase, in collaboration with the Royal Danish Air Force.
+
+\begin{TraceForward}{SR}{Test}\label{ForwardTrace}
 \TF
-{a}
-{b}
-{c}
+{SR-1}
+{The system shall be able to operate in manual mode which will dispense the program selected by the pilot.}
+{Test 5}
 
 \TF
-{e}
-{d}
-{f}
+{SR-2}
+{The system shall be able to operate in semi-automatic mode which will initiate an intelligent threat response upon consent from the pilot}
+{Test 2}
+
+\TF
+{SR-3}
+{The system shall be able to operate in automatic mode which will initiate an intelligent threat response without pilot interaction}
+{Test 2}
+
+\TF
+{SR-4}
+{The pod shall include a minimum of eight standard magazines}
+{Test 5}
+
+\TF
+{SR-5}
+{The pod shall be able to dispense forwards, downwards and sideways}
+{Test 2}
+
+\TF
+{SR-6}
+{Threats shall be transmitted to the aircraft mission computer in body frame format (relative to aircraft) for displaying purposes}
+{Test 2}
+
+\TF
+{SR-7}
+{The system shall provide the aircraft mission computer with current status information}
+{Test 2, Test 5}
+
+\TF
+{SR-8}
+{The system shall run built-in test and make the results available to the aircraft mission computer}
+{Test 5}
+
+\TF
+{SR-9}
+{The system shall provide the aircraft intercom system audio cues and warnings}
+{Test 2}
+
+\TF
+{SR-10}
+{The system status on individual LRU level shall be provided by cockpit unit}
+{Test 5}
+
+\TF
+{SR-11}
+{The cockpit unit shall be able to control power of dispensing system and MWS}
+{Test 5}
+
+\TF
+{SR-12}
+{The system shall be able to dispense the payloads in a preloaded program}
+{Test 2}
+
+\TF
+{SR-13}
+{The payload patterns shall be programmable by the customer adjusting which payloads should be fired at which rate}
+{Test 2}
+
+\TF
+{SR-14}
+{The cockpit unit shall communicate with the mission computer via a MIL-STD-1553-B data bus}
+{Test 5}
+
+\TF
+{SR-15}
+{The system shall interface the aircraft intercom system via the MIL-STD-1553-B databus}
+{Test 2}
+
+\TF
+{SR-16}
+{The system shall provide a method of loading software to MWS}
+{Test 5}
+
+\TF
+{SR-17}
+{The cockpit unit shall communicate with the MWS via a MIL-STD-1553-B data bus}
+{Test 2}
+
+\TF
+{SR-18}
+{The system may not obstruct the current weapon systems physically}
+{Test 5}
+
+\TF
+{SR-19}
+{The system response time for any given process must not exceed 5 ms, as not to hold up the mission computer.}
+{Test 2}
+
+\TF
+{SR-20}
+{The system shall include a hardware implemented safety interlock to prevent dispensing on ground}
+{Test 5}
+
+\TF
+{SR-21}
+{The system shall be able to erase sensitive data upon input from a discrete zeroize signal from the mission computer}
+{Test 2}
+
+\TF
+{SR-22}
+{The pod structure shall remain intact when exposed to steady state acceleration levels of 5g fore 2.5g aft, 25g up, 11g down}
+{Test 3}
+
+\TF
+{SR-23}
+{The pod shall be operational at temperatures of 95 degree Celsius on outer skin and 102 degree Celsius on leading edge for 25 minutes}
+{Test 4}
+
+\TF
+{SR-24}
+{The pod shall be operational at temperatures of 134 degree Celsius on outer skin and 151 degree Celsius on leading edge for 3 minutes}
+{Test 4}
+
+\TF
+{SR-25}
+{The system shall be able to dispense a minimum of two payloads simultaneously}
+{Test 2}
+
+\TF
+{SR-26}
+{The system can dispense a minimum of 20 payloads per second}
+{Test 2}
+
+\TF
+{SR-27}
+{The system shall provide the optimal coverage against	missile threats}
+{}
+
+\TF
+{SR-28}
+{The pod shall be mounted on the aircraft wing with standard T-hooks spaced by 13 inches}
+{Test 5}
+
+\TF
+{SR-29}
+{The total weight of pod cannot exceed 270 kg}
+{Test 1}
+
+\TF
+{SR-30}
+{The pod shall be mounted on the left-hand wing}
+{Test 5}
+
+\TF
+{SR-31}
+{The power consumption of the pod shall not exceed 700W}
+{Test 2}
 
 \end{TraceForward}
 
