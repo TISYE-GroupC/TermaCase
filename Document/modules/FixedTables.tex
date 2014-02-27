@@ -30,50 +30,6 @@
 {\hline \end{longtable}
 \setcounter{ctStep}{0}}
 
-\newcommand{\Record}[3]{\parbox[t]{\TCfirst}{\step} &\parbox[t]{\TCsecond}{#1} &\parbox[t]{\TCthird}{#2}& \parbox[t]{\TCfourth}{#3} \\}
-
-\newcommand{\RecordAddi}[4]{\parbox[t]{\TCfirst}{\arabic{ctStep}#1} &\parbox[t]{\TCsecond}{#2} &\parbox[t]{\TCthird}{#3}& \parbox[t]{\TCfourth}{#4} \\}
-
-
-%--------------------------------------------------
-%\begin{DataTable}
-%\Record
-%{Task}
-%{Solution}
-%{Code}
-
-%\RecordProblem
-%{Problem}
-%{}
-%{Solution}
-%{Code}
-%\end{TaskTable}
-%--------------------------------------------------
-\newenvironment{TaskTable}
-{\begin{longtable}{ p{\TCfirst}  p{\TCsecond} p{\TCthird} p{\TCfourth} }
-\hline \multicolumn{2}{l}{\textbf{Subtask and variant}} & \textbf{Example solution} & \textbf{Code} \\ \hline}
-{\hline \end{longtable}
-\setcounter{ctStep}{0}}
-
-\newenvironment{EventTable}
-{\begin{longtable}{ p{\TCfirst}  p{\TCsecond} p{\TCthird} p{\TCfourth} }
-\hline \multicolumn{2}{l}{\textbf{The system must generate these reminders:}} & \textbf{Example solution} & \textbf{Code} \\ \hline}
-{\hline \end{longtable}
-\setcounter{ctStep}{0}}
-
-\newenvironment{FunctionTable}
-{\begin{longtable}{ p{\TCfirst}  p{\TCsecond} p{\TCthird} p{\TCfourth} }
-\hline \multicolumn{2}{l}{\textbf{Function:}} & \textbf{Example solution} & \textbf{Code} \\ \hline}
-{\hline \end{longtable}
-\setcounter{ctStep}{0}}
-
-\newenvironment{ReqTable}
-{\begin{longtable}{ p{\TCfirst}  p{\TCsecond} p{\TCthird} p{\TCfourth} }
-\hline \multicolumn{2}{l}{\textbf{Requirement:}} & \textbf{Example solution} & \textbf{Code} \\ \hline}
-{\hline \end{longtable}
-\setcounter{ctStep}{0}}
-
-
 
 
 
@@ -126,9 +82,9 @@
 \newcommand{\fSecond}{0.68 \textwidth}
 \newcommand{\fThird}{0.15 \textwidth}
 
-\newcommand{\bFirst}{0.14 \textwidth}
+\newcommand{\bFirst}{0.11 \textwidth}
 \newcommand{\bSecond}{0.68 \textwidth}
-\newcommand{\bThird}{0.15 \textwidth}
+\newcommand{\bThird}{0.17 \textwidth}
 
 
 \newenvironment{TraceForward}[2]%
@@ -141,7 +97,7 @@
 \newenvironment{TraceBackward}[2]%
 {%
 	\begin{longtable}{ p{\bFirst}  p{\bSecond} p{\bThird} }
-	\hline \textbf{#1} & \textbf{Functional Requirement} & \textbf{#2} \\ \hline%
+	\hline \begin{minipage} [t]{\bFirst} \textbf{#1} \vspace{0pt}\end{minipage} & \textbf{Functional Requirement} & \textbf{#2} \\ \hline%
 }{\hline \end{longtable}}
 
 
