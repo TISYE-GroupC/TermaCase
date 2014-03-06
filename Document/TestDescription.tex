@@ -32,7 +32,7 @@ The test pattern shall be selected.
 The test pattern will fire 20 payloads pr second, 2 at a time, 10 forwards and backwards, 10 to each side.
 \\
 The test bench will simulate the interface of an F-16 being in flight.}
-\TCdesc{Tests the pod's communication and power consumption.}
+\TCdesc{Tests the pod's communication and threat response.}
 \end{TestCaseIntro}
 
 \begin{TestCase}
@@ -41,19 +41,9 @@ The test bench will simulate the interface of an F-16 being in flight.}
 {}
 
 \TC
-{Request status using the MIL-STD-1553-B databus}
+{Request status using the MIL-STD-1553-B databus.}
 {System responds with status in less than 5 ms.}
 
-\TC
-{A threat is simulated with dummy sensors.}
-{The system reports a threat within 5 ms.
-The system transmits audio cues to the pilot.}
-
-
-\TC
-{A fire command is given to the system.}
-{The system dispenses the test pattern at the required rates.
-The power consumption does not exceed 700 W.}
 
 \TC
 {The system is set in automatic mode.}
@@ -61,12 +51,13 @@ The power consumption does not exceed 700 W.}
 
 \TC
 {A threat is simulated with dummy sensors.}
-{The system fires the test pattern immediately.}
+{The system transmits audio cues to the pilot.
+
+The system dispenses the test pattern at the required rates automatically.
+
+Updated amount of available payload is made available to the Mission computer}
 
 
-\TC
-{Send zeroize signal to the system from the mission computer.}
-{All sensitive data is erased.}
 \end{TestCase}
 
 
