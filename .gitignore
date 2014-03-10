@@ -64,6 +64,13 @@
 /Document/*.pdf
 /Document/**/*.pdf
 
+
+####### Microsift Office auto back-up files #####
+~$*.pptx
+~$*.docx
+~$*.elsx
+
+
 ####### Temporary folders ####### 
 [Bb]in
 [Dd]ebug*/
